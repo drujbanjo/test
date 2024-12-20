@@ -6,7 +6,7 @@ export default function Home() {
 	const [currentData, setCurrentData] = useState<{ message: string }>()
 	useEffect(() => {
 		const fetchData = async () => {
-			const res = await fetch("http://localhost:4201/")
+			const res = await fetch("https://test-backend-kappa-tawny.vercel.app/")
 			const data = await res.json()
 			setCurrentData(data)
 		}
