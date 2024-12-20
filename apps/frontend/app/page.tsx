@@ -11,7 +11,7 @@ export default function Home() {
 			setCurrentData(data)
 		}
 		fetchData()
-	})
+	}, [])
 	return (
 		<div className={styles.page}>
 			{currentData && <p>{currentData.message}</p>}
